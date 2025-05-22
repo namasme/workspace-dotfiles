@@ -24,8 +24,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # Handle dotfiles
 ## Install stow
 sudo apt install stow
+## Delete existing dotfiles to avoid conflicts
+rm ~/.tmux.conf ~/.zshrc
 ## Symlink dotfiles
-cd dotfiles
-stow tmux
-stow zsh
-
+stow --dir ~/dotfiles/dotfiles --target ~ tmux zsh
