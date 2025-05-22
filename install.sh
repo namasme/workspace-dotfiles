@@ -6,7 +6,7 @@ set -euo pipefail
 sudo apt update && sudo apt upgrade
 
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 [ -f /home/linuxbrew/.linuxbrew/bin/brew ] && echo "export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH" >> ~/.zshenv
 ## Add Datadog tap
 source ~/.zshenv
