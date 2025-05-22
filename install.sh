@@ -21,6 +21,9 @@ sudo apt install fzf
 # Install tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# Install pyenv
+curl -fsSL https://pyenv.run | bash
+
 # Handle dotfiles
 ## Install stow
 sudo apt install stow
