@@ -12,6 +12,8 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 source ~/.zshenv
 brew tap datadog/tap git@github.com:DataDog/homebrew-tap.git
 brew update
+## Install fx
+brew install fx
 ## Install OrgStore CLI
 brew install orgstore
 
