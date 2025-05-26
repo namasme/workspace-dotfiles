@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Update repositories
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt --yes upgrade
 
 # Install Homebrew
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
