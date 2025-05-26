@@ -18,7 +18,8 @@ brew install fx
 brew install orgstore
 
 # Install fzf
-sudo apt install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --completion --key-bindings --no-update-rc
 
 # Install tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

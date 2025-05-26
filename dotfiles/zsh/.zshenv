@@ -7,3 +7,6 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Adds fzf to PATH
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
