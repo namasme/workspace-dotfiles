@@ -18,6 +18,8 @@ brew install fx
 brew install orgstore
 
 # Install fzf
+## Remove existing apt installation as it's outdated
+sudo apt remove -y fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --completion --key-bindings --no-update-rc
 
