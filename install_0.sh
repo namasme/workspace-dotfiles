@@ -46,3 +46,7 @@ sudo apt install stow
 rm ~/.tmux.conf ~/.zshrc
 ## Symlink dotfiles
 stow --dir ~/dotfiles/dotfiles --target ~ tmux zsh
+
+# Set up devkube
+ddtool clusters use entei.us1.staging.dog
+devkube use nachomas
